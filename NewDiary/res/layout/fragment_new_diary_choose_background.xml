@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="850px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/shape_all_corners_rounded"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_choose_background_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:background="@drawable/shape_top_corners_rounded"
+            android:textColor="#8fbbbbbb" />
+
+        <ListView
+            android:id="@+id/listview_choose_background"
+            android:layout_width="match_parent"
+            android:layout_height="850px" 
+            android:divider="@android:color/black"
+        	android:dividerHeight="3dp"
+            android:background="@drawable/listview_background">
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="@drawable/shape_bottom_corners_rounded" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_choose_background"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_alignBaseline="@+id/button_choose_background_search"
+        android:layout_alignBottom="@+id/button_choose_background_search"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_all_corners_rounded"
+        android:ems="6"
+        android:gravity="center"
+        android:hint="search"
+        android:visibility="invisible"
+        android:textColor="#cccccc"
+        android:maxLines="1" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_choose_background_location"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignBottom="@+id/editText_choose_background"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:background="@drawable/button_location" />
+
+    <Button
+        android:id="@+id/button_choose_background_search"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_search" />
+
+</RelativeLayout>

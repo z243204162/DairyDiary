@@ -1,0 +1,73 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background" >
+        
+        <LinearLayout 
+            android:id="@+id/main_gallery"
+		    android:layout_width="850px"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_gravity="center"
+		    android:background="@drawable/shape_all_corners_rounded"
+		    android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_height="50px"
+		        android:layout_width="fill_parent"
+                android:background="@drawable/shape_top_corners_rounded" />
+		
+		    <ImageView
+		        android:id="@+id/main_imageview"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" />
+
+		    <TextView
+		        android:id="@+id/main_date_textView"
+		        android:text="TextView"
+		        android:layout_height="50px"
+		        android:layout_width="fill_parent"
+		        android:gravity="center"
+		        android:background="@drawable/shape_bottom_corners_rounded"
+		        android:textColor="#8f89c413"/>
+
+		</LinearLayout>
+		
+	    <LinearLayout
+	        android:layout_width="322dp"
+	        android:layout_height="74dp"
+	        android:layout_gravity="bottom"
+	        android:orientation="vertical" >
+
+	        <Button
+	            android:id="@+id/main_new_button"
+	            android:background="@drawable/button_new"
+	            android:layout_height="100px"
+	        	android:layout_width="100px"
+	        	android:layout_gravity="right"/>
+
+    	</LinearLayout>
+		    
+    </FrameLayout>
+    
+    <!-- The navigation drawer -->
+
+    <ListView 
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

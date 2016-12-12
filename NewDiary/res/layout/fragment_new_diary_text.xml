@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="850px"
+        android:layout_height="1050px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/shape_all_corners_rounded"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="@drawable/shape_top_corners_rounded" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="850px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/editText_diarytext"
+                    android:layout_width="650px"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:hint="what's up today?"
+                    android:textColor="#8fdddddd"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textColorHint="#8faaaaaa">
+				<requestFocus/>
+                </EditText>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:background="@drawable/shape_bottom_corners_rounded"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/button_cancel" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/button_save" />
+    
+</RelativeLayout>

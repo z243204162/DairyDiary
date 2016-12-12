@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_background" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="800px"
+        android:layout_height="1000px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Radius"
+            android:textColor="#8fbbbbbb" />
+
+        <SeekBar
+            android:id="@+id/location_img_radius_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="1600" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Image Quality" 
+            android:textColor="#8fbbbbbb" />
+
+        <SeekBar
+            android:id="@+id/location_img_size_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Image Quality"
+            android:textColor="#8fbbbbbb"  />
+
+        <SeekBar
+            android:id="@+id/search_img_size_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:max="4"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background Opacity" 
+            android:textColor="#8fbbbbbb" />
+
+        <SeekBar
+            android:id="@+id/background_opacity_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setting_confirm"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_confirm" />
+
+    <Button
+        android:id="@+id/setting_cancel"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_cancel" />
+
+</RelativeLayout>
